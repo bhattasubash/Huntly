@@ -2,3 +2,5 @@ node_modules/
 dist/
 .env
 *.js.map
+# Exclude root backend lockfile - prevents Next.js from confusing repo root as workspace root
+/package-lock.json
