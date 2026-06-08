@@ -1,0 +1,37 @@
+{
+  "name": "signalhop",
+  "version": "1.0.0",
+  "description": "Real-time Reddit social listening & lead routing co-pilot for solo founders",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "setup": "ts-node src/setup.ts",
+    "manage": "ts-node src/manage.ts",
+    "manage:delete": "ts-node src/manage.ts delete"
+  },
+  "keywords": [
+    "reddit",
+    "lead-generation",
+    "ai",
+    "gemini",
+    "social-listening"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.0",
+    "openai": "^6.42.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,92 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,900&f[]=chillax@500,600,700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #e3e3e3;  /* Solid clean light gray background */
+  --foreground: #111827;  /* Slate 900 for modern SaaS vibe */
+  --card: #ffffff;        /* Crisp white card surface */
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #b9ff66;     /* Lime green highlight */
+  --primary-foreground: #111827;
+  --secondary: #111827;   /* Deep solid black/slate */
+  --secondary-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280; /* Cool gray */
+  --accent: #b9ff66;
+  --accent-foreground: #111827;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;      /* Soft borders */
+  --input: #ffffff;
+  --ring: #b9ff66;
+  --radius: 2rem;         /* Large HubSpot-style border radiuses */
+}
+
+@theme inline {
+  --font-sans: 'Chillax', var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: 'Cabinet Grotesk', var(--font-open-sans), ui-sans-serif, system-ui;
+  --font-cabinet: 'Cabinet Grotesk', sans-serif;
+  --font-chillax: 'Chillax', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Glassmorphism for Navbar only */
+.glass-nav {
+  background: rgba(227, 227, 227, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.05);
+}
+
+/* HubSpot Soft CRM Card (No harsh black borders, soft drop shadows, high rounded radius) */
+.crm-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.02), 0 10px 30px -5px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.crm-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.06), 0 4px 15px -2px rgba(0, 0, 0, 0.02);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
