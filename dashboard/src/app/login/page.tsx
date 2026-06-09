@@ -181,14 +181,9 @@ export default function LoginPage() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
 
       {/* Header link back */}
-      <div className="absolute top-8 left-8 flex items-center gap-2">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-tr from-primary to-accent">
-            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
-          </div>
-          <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Huntly
-          </span>
+      <div className="absolute top-8 left-8 flex items-center">
+        <Link href="/" className="flex items-center">
+          <img src="/huntly_logo.png" alt="Huntly Logo" className="h-8 w-auto object-contain" />
         </Link>
       </div>
 

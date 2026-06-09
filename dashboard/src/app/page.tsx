@@ -235,13 +235,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-md border border-black rounded-full px-6 py-2.5 flex justify-between items-center shadow-[0_12px_30px_rgba(0,0,0,0.03)]">
           
           {/* Logo */}
-          <div className="flex items-center gap-2.5">
-            <div className="h-8 w-8 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden shadow-sm">
-              <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
-            </div>
-            <span className="font-display font-black text-xl tracking-tight text-slate-900">
-              Huntly
-            </span>
+          <div className="flex items-center">
+            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-8 w-auto object-contain" />
           </div>
 
           {/* Links */}
@@ -335,13 +330,8 @@ export default function Home() {
               {/* Dashboard Navbar */}
               <div className="border-b border-slate-100 px-5 py-2.5 flex items-center justify-between bg-white text-xs select-none">
                 {/* Logo info */}
-                <div className="flex items-center gap-2">
-                  <div className="h-5.5 w-5.5 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden shadow-sm">
-                    <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
-                  </div>
-                  <span className="font-display font-black text-xs tracking-tight text-slate-900">
-                    Huntly
-                  </span>
+                <div className="flex items-center">
+                  <img src="/huntly_logo.png" alt="Huntly Logo" className="h-5.5 w-auto object-contain" />
                 </div>
                 
                 {/* Right utility items */}
@@ -916,11 +906,8 @@ export default function Home() {
             
             {/* Brand Col */}
             <div className="md:col-span-4 space-y-4">
-              <div className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden shadow-sm">
-                  <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
-                </div>
-                <span className="font-display font-black text-xl tracking-tight text-slate-900">Huntly</span>
+              <div className="flex items-center">
+                <img src="/huntly_logo.png" alt="Huntly Logo" className="h-8 w-auto object-contain" />
               </div>
               
               <p className="text-[13px] text-slate-500 font-sans font-medium leading-relaxed max-w-[220px]">

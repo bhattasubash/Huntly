@@ -27,13 +27,8 @@ export default async function DashboardLayout({
       <aside className="w-64 glass border-r border-border shrink-0 flex flex-col justify-between">
         <div>
           {/* Logo */}
-          <div className="p-6 border-b border-border/50 flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-tr from-primary to-accent shadow-md">
-              <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
-            </div>
-            <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              Huntly
-            </span>
+          <div className="p-6 border-b border-border/50 flex items-center">
+            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-8 w-auto object-contain" />
           </div>
 
           {/* Navigation Links */}
