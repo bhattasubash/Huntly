@@ -9,18 +9,16 @@ export function createClient() {
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!url || !anonKey) {
-    if (typeof window === 'undefined') {
-      const handler = {
-        get: (target: any, prop: string): any => {
-          if (prop === 'then') {
-            return (resolve: any) => resolve({ data: null, error: null, count: 0 });
-          }
-          return () => new Proxy({}, handler);
+    console.warn("Supabase environment variables NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY are missing. Using a fallback proxy client.");
+    const handler = {
+      get: (target: any, prop: string): any => {
+        if (prop === 'then') {
+          return (resolve: any) => resolve({ data: null, error: new Error("Supabase not configured"), count: 0 });
         }
-      };
-      return new Proxy({}, handler) as unknown as SupabaseClient;
-    }
-    throw new Error("Supabase environment variables NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY are missing.");
+        return () => new Proxy({}, handler);
+      }
+    };
+    return new Proxy({}, handler) as unknown as SupabaseClient;
   }
 
   return createBrowserClient(url, anonKey);
