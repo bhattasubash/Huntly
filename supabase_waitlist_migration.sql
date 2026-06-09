@@ -1,5 +1,5 @@
 -- ============================================================
---  SignalHop — Waitlist Table Migration
+--  Huntly — Waitlist Table Migration
 --  Run this in: Supabase Dashboard → SQL Editor → New Query
 -- ============================================================
 

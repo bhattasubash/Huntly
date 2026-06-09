@@ -64,8 +64,8 @@ if (process.env.OPENROUTER_API_KEY) {
       apiKey: process.env.OPENROUTER_API_KEY,
       baseURL: 'https://openrouter.ai/api/v1',
       defaultHeaders: {
-        'HTTP-Referer': 'https://github.com/signalhop',
-        'X-Title':      'SignalHop',
+        'HTTP-Referer': 'https://github.com/huntly',
+        'X-Title':      'Huntly',
       },
     }),
     exhausted: false,

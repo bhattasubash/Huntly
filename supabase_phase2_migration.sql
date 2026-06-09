@@ -1,5 +1,5 @@
 -- ============================================================
---  SignalHop — Phase 2 Migration
+--  Huntly — Phase 2 Migration
 --  Run this in: Supabase Dashboard → SQL Editor → New Query
 --
 --  Purpose: Convert product_context from plain TEXT to JSONB

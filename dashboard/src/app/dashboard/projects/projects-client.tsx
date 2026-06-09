@@ -276,7 +276,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
               <form onSubmit={handleStartAnalysis} className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-extrabold text-white">Create a New Project</h3>
-                  <p className="text-sm text-muted-foreground">SignalHop will scrape your landing page, generate a product profile, and find relevant subreddits automatically.</p>
+                  <p className="text-sm text-muted-foreground">Huntly will scrape your landing page, generate a product profile, and find relevant subreddits automatically.</p>
                 </div>
 
                 <div className="space-y-4">

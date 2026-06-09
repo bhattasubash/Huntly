@@ -697,11 +697,11 @@ async function runPollCycle(): Promise<void> {
 
 // ─── Public Entry Point ───────────────────────────────────────
 /**
- * Starts the SignalHop ingestion engine.
+ * Starts the Huntly ingestion engine.
  * Runs an immediate first cycle, then repeats every POLL_INTERVAL_MS.
  */
 export function startScraper(): void {
-  console.log('[scraper] 🚀 SignalHop scraper initializing...');
+  console.log('[scraper] 🚀 Huntly scraper initializing...');
 
   supabase = initSupabase();
 

@@ -1,5 +1,5 @@
 -- ============================================================
---  SignalHop — Supabase Database Schema
+--  Huntly — Supabase Database Schema
 --  Paste and execute the entire contents of this file in:
 --  Supabase Dashboard → SQL Editor → New Query
 -- ============================================================

@@ -1,8 +1,8 @@
-# SignalHop 🎯
+# Huntly 🎯
 
 **Real-time Reddit social listening & lead routing co-pilot for solo founders.**
 
-SignalHop monitors Reddit for high-intent buying signals, classifies them with Gemini AI, and fires structured alerts — complete with 3 copy-paste reply drafts — directly to your Telegram.
+Huntly monitors Reddit for high-intent buying signals, classifies them with Gemini AI, and fires structured alerts — complete with 3 copy-paste reply drafts — directly to your Telegram.
 
 The Human-In-The-Loop model keeps your Reddit account completely safe: you copy the drafts and post replies natively inside your browser. No automation, no bans.
 
@@ -76,7 +76,7 @@ INSERT INTO public.projects (
 );
 ```
 
-### 4. Run SignalHop
+### 4. Run Huntly
 
 ```bash
 npm run dev
@@ -106,7 +106,7 @@ You'll see the banner, env validation, and the first poll cycle begin immediatel
 Every fetched post is checked against 14 transactional phrases (`recommend`, `alternative`, `looking for`, `anyone know`, etc.) **and** your project's keywords. Posts that match neither are discarded instantly — zero AI API cost.
 
 ### Stage 2 — Product Context (cached)
-The first time a project is processed, SignalHop scrapes your `website_url`, strips navigation/footers/scripts, and sends the distilled text to Gemini for a one-paragraph product profile. This profile is cached in the `product_context` column — subsequent runs use the cache.
+The first time a project is processed, Huntly scrapes your `website_url`, strips navigation/footers/scripts, and sends the distilled text to Gemini for a one-paragraph product profile. This profile is cached in the `product_context` column — subsequent runs use the cache.
 
 ### Stage 3 — Intent Classification
 Surviving posts are sent to Gemini with a strict JSON schema. The response guarantees:
@@ -123,7 +123,7 @@ Only posts where `isHighIntent = true` **and** `confidenceScore > 0.75` fire a T
 ## Telegram Alert Format
 
 ```
-🎯 SignalHop Lead Alert
+🎯 Huntly Lead Alert
 
 📌 Project: YourCompany
 🔴 Subreddit: r/SaaS
@@ -176,7 +176,7 @@ On the Gemini free tier (gemini-2.5-flash): ~1500 free requests/day. A typical r
 - **Never commit `.env`** — it's in `.gitignore`
 - The `SUPABASE_SERVICE_ROLE_KEY` bypasses RLS — only use server-side
 - All Reddit requests are read-only (no posting, no auth)
-- SignalHop never posts to Reddit — you always do that manually
+- Huntly never posts to Reddit — you always do that manually
 
 ---
 

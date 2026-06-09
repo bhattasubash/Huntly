@@ -15,9 +15,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'SignalHop — Human-in-the-Loop Reddit Lead Generation',
+  title: 'Huntly — Human-in-the-Loop Reddit Lead Generation',
   description:
-    'SignalHop monitors Reddit for buying intent, generates context-aware AI replies, and routes leads to your dashboard for fast human-in-the-loop engagement.',
+    'Huntly monitors Reddit for buying intent, generates context-aware AI replies, and routes leads to your dashboard for fast human-in-the-loop engagement.',
 };
 
 export default function RootLayout({

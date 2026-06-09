@@ -314,7 +314,7 @@ export default function OpportunityClient({ opportunity, project }: OpportunityC
           <div className="glass p-6 rounded-2xl space-y-4">
             <h3 className="text-md font-bold text-white border-b border-border/50 pb-2">Lead Quality Feedback</h3>
             <p className="text-xs text-muted-foreground">
-              Rate this lead to help tune future SignalHop intent analysis and prioritization weights.
+              Rate this lead to help tune future Huntly intent analysis and prioritization weights.
             </p>
 
             <div className="grid grid-cols-2 gap-2">

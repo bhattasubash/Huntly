@@ -240,7 +240,7 @@ export default function Home() {
               S
             </div>
             <span className="font-display font-black text-xl tracking-tight text-slate-900">
-              SignalHop
+              Huntly
             </span>
           </div>
 
@@ -283,7 +283,7 @@ export default function Home() {
             </h1>
             
             <p className="text-base sm:text-lg text-slate-500 mb-8 max-w-2xl mx-auto leading-relaxed font-sans font-medium">
-              SignalHop scans Reddit, understands your product, and delivers high-intent conversations with AI replies you can trust.
+              Huntly scans Reddit, understands your product, and delivers high-intent conversations with AI replies you can trust.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
@@ -324,7 +324,7 @@ export default function Home() {
             <div className="absolute -top-40 right-4 w-64 h-64 -z-10 pointer-events-none select-none">
               <img 
                 src="/hero_section_character.png" 
-                alt="SignalHop Mascot" 
+                alt="Huntly Mascot" 
                 className="w-full h-full object-contain"
               />
             </div>
@@ -340,7 +340,7 @@ export default function Home() {
                     S
                   </div>
                   <span className="font-display font-black text-xs tracking-tight text-slate-900">
-                    SignalHop
+                    Huntly
                   </span>
                 </div>
                 
@@ -439,7 +439,7 @@ export default function Home() {
                     </div>
 
                     <p className="text-[10.5px] sm:text-[11.5px] text-slate-600 leading-relaxed italic bg-white border border-slate-100 rounded-lg p-2.5">
-                      "SignalHop does exactly that. It monitors Reddit in real-time, finds high-intent buyers, and drafts replies you can approve in one click. Highly recommend!"
+                      "Huntly does exactly that. It monitors Reddit in real-time, finds high-intent buyers, and drafts replies you can approve in one click. Highly recommend!"
                     </p>
 
                     <div className="flex items-center gap-1.5 pt-0.5 text-[10px]">
@@ -537,7 +537,7 @@ export default function Home() {
                   <span className="text-red-500 font-extrabold text-sm select-none">✕</span>
                 </div>
                 <h3 className="text-sm font-black uppercase tracking-wider text-slate-800 font-sans">
-                  Without SignalHop
+                  Without Huntly
                 </h3>
               </div>
               
@@ -578,7 +578,7 @@ export default function Home() {
                   <Check className="h-4.5 w-4.5 text-slate-900 stroke-[3.5]" />
                 </div>
                 <h3 className="text-sm font-black uppercase tracking-wider text-slate-800 font-sans">
-                  With SignalHop
+                  With Huntly
                 </h3>
               </div>
               
@@ -619,7 +619,7 @@ export default function Home() {
         <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[80%] h-[55%] rounded-full bg-[#b9ff66]/15 blur-[120px] pointer-events-none -z-10"></div>
         <div className="absolute bottom-[10%] left-[10%] w-[400px] h-[400px] rounded-full bg-violet-500/10 blur-[100px] pointer-events-none -z-10"></div>
         <h2 className="font-display tracking-tight text-slate-950 text-2xl sm:text-3xl xl:text-[2.5rem] font-black mb-20 leading-tight text-center max-w-2xl mx-auto">
-          How SignalHop works
+          How Huntly works
         </h2>
 
         <div className="flex flex-col md:flex-row items-stretch justify-center gap-4 md:gap-0 max-w-7xl mx-auto relative">
@@ -665,7 +665,7 @@ export default function Home() {
 
             <h4 className="font-display font-black text-slate-900 text-lg mb-2">We find buying intent</h4>
             <p className="text-xs sm:text-[13px] text-slate-500 leading-relaxed font-sans font-semibold">
-              SignalHop scans Reddit 24/7 and finds people looking for solutions like yours.
+              Huntly scans Reddit 24/7 and finds people looking for solutions like yours.
             </p>
           </div>
 
@@ -722,11 +722,11 @@ export default function Home() {
           </div>
 
           <h2 className="font-display tracking-tight text-slate-950 text-2xl sm:text-3xl xl:text-[2.8rem] font-black mb-4 leading-tight">
-            Be among the first <br /> founders to try SignalHop<span className="text-[#8be92a]">.</span>
+            Be among the first <br /> founders to try Huntly<span className="text-[#8be92a]">.</span>
           </h2>
           
           <p className="text-xs sm:text-sm text-slate-500 font-semibold mb-6 leading-relaxed max-w-sm mx-auto">
-            We're opening access gradually while we refine SignalHop. Early waitlist members will receive priority access when invitations begin.
+            We're opening access gradually while we refine Huntly. Early waitlist members will receive priority access when invitations begin.
           </p>
 
           {/* Waitlist count */}
@@ -746,7 +746,7 @@ export default function Home() {
               </div>
               <h4 className="font-extrabold text-slate-950 text-base uppercase tracking-tight">You're on the list!</h4>
               <p className="text-xs text-slate-500 leading-relaxed font-bold">
-                We'll send early access invitations as SignalHop rolls out. Keep an eye on your inbox.
+                We'll send early access invitations as Huntly rolls out. Keep an eye on your inbox.
               </p>
             </div>
           ) : (
@@ -920,7 +920,7 @@ export default function Home() {
                 <div className="h-8 w-8 rounded-full bg-slate-900 text-[#b9ff66] flex items-center justify-center font-display font-black text-base shadow-sm">
                   S
                 </div>
-                <span className="font-display font-black text-xl tracking-tight text-slate-900">SignalHop</span>
+                <span className="font-display font-black text-xl tracking-tight text-slate-900">Huntly</span>
               </div>
               
               <p className="text-[13px] text-slate-500 font-sans font-medium leading-relaxed max-w-[220px]">
@@ -942,7 +942,7 @@ export default function Home() {
                   <LinkedinIcon className="h-4 w-4" />
                 </a>
                 <a 
-                  href="mailto:contact@signalhop.com" 
+                  href="mailto:contact@huntly.com" 
                   className="h-8 w-8 rounded-lg bg-slate-100 hover:bg-slate-200/80 flex items-center justify-center text-slate-850 transition-colors"
                 >
                   <Mail className="h-4 w-4" />
@@ -1007,7 +1007,7 @@ export default function Home() {
 
           {/* Copyright */}
           <div className="text-left text-[10px] text-slate-400 font-bold font-sans">
-            &copy; {new Date().getFullYear()} SignalHop. All rights reserved.
+            &copy; {new Date().getFullYear()} Huntly. All rights reserved.
           </div>
         </div>
       </footer>

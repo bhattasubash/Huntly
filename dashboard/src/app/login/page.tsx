@@ -72,7 +72,7 @@ function LoginForm() {
     <div className="w-full max-w-md glass p-8 rounded-2xl relative z-10">
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary/15 border border-primary/25 text-accent mb-3">
-          <Sparkles className="h-3.5 w-3.5" /> SignalHop SaaS V1
+          <Sparkles className="h-3.5 w-3.5" /> Huntly SaaS V1
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight text-white mb-2">
           {isSignUp ? 'Create an account' : 'Welcome back'}
@@ -187,7 +187,7 @@ export default function LoginPage() {
             S
           </div>
           <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            SignalHop
+            Huntly
           </span>
         </Link>
       </div>

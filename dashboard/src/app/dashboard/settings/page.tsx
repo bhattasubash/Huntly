@@ -101,7 +101,7 @@ export default async function SettingsPage() {
           <HelpCircle className="h-5 w-5 text-primary" /> Technical Architecture
         </h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          SignalHop maintains a split-responsibility model. Your local background listening loop executes subreddit searches and processes intent signals via your machine. Discovered leads are safely written to Supabase where they become instant actionable notifications in this dashboard and on Telegram.
+          Huntly maintains a split-responsibility model. Your local background listening loop executes subreddit searches and processes intent signals via your machine. Discovered leads are safely written to Supabase where they become instant actionable notifications in this dashboard and on Telegram.
         </p>
       </div>
     </div>

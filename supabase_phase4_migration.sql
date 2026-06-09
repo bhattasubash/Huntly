@@ -1,5 +1,5 @@
 -- ============================================================
---  SignalHop — Phase 4 SQL Migration
+--  Huntly — Phase 4 SQL Migration
 --  Run this in: Supabase Dashboard → SQL Editor → New Query
 -- ============================================================
 

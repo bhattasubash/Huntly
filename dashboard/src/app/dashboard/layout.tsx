@@ -32,7 +32,7 @@ export default async function DashboardLayout({
               S
             </div>
             <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-              SignalHop
+              Huntly
             </span>
           </div>
 

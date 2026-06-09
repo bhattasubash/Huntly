@@ -1,5 +1,5 @@
 // ============================================================
-//  src/types.ts — Shared TypeScript interfaces for SignalHop
+//  src/types.ts — Shared TypeScript interfaces for Huntly
 //  Updated for Phase 2: enriched IntentResult + ProductProfile
 // ============================================================
 

@@ -78,7 +78,7 @@ function formatAlertMessage(payload: AlertPayload): string {
   });
 
   const lines = [
-    `🔥 *SignalHop Lead Alert*`,
+    `🔥 *Huntly Lead Alert*`,
     ``,
     `📌 *Project:* ${companyName}`,
     `🟥 *Subreddit:* r/${escMd(post.subreddit)}`,

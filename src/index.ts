@@ -1,5 +1,5 @@
 // ============================================================
-//  src/index.ts — SignalHop Entry Point
+//  src/index.ts — Huntly Entry Point
 //
 //  Validates environment, then starts the scraper loop.
 // ============================================================
@@ -25,7 +25,7 @@ function validateEnvironment(): void {
   }
 
   if (missing.length > 0) {
-    console.error('\n❌ SignalHop cannot start — missing environment variables:');
+    console.error('\n❌ Huntly cannot start — missing environment variables:');
     missing.forEach((key) => console.error(`   • ${key}`));
     console.error('\nCopy .env.example → .env and fill in your credentials.\n');
     process.exit(1);
@@ -47,16 +47,16 @@ startScraper();
 
 // ─── Graceful Shutdown ────────────────────────────────────────
 process.on('SIGINT', () => {
-  console.log('\n[signalhop] Received SIGINT — shutting down gracefully.');
+  console.log('\n[huntly] Received SIGINT — shutting down gracefully.');
   process.exit(0);
 });
 
 process.on('SIGTERM', () => {
-  console.log('\n[signalhop] Received SIGTERM — shutting down gracefully.');
+  console.log('\n[huntly] Received SIGTERM — shutting down gracefully.');
   process.exit(0);
 });
 
 process.on('unhandledRejection', (reason) => {
-  console.error('[signalhop] Unhandled promise rejection:', reason);
+  console.error('[huntly] Unhandled promise rejection:', reason);
   // Do NOT exit — keep the loop alive
 });
