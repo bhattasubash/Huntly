@@ -183,7 +183,7 @@ export default function LoginPage() {
       {/* Header link back */}
       <div className="absolute top-8 left-8 flex items-center">
         <Link href="/" className="flex items-center">
-          <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[58px] w-[87px]" />
+          <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[68px] w-[102px]" />
         </Link>
       </div>
 

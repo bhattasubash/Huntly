@@ -28,7 +28,7 @@ export default async function DashboardLayout({
         <div>
           {/* Logo */}
           <div className="p-6 border-b border-border/50 flex items-center">
-            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[58px] w-[87px]" />
+            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[68px] w-[102px]" />
           </div>
 
           {/* Navigation Links */}
