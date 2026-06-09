@@ -236,7 +236,7 @@ export default function Home() {
           
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[112px] w-[210px]" />
+            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[48px] w-[72px]" />
           </div>
 
           {/* Links */}
@@ -331,7 +331,7 @@ export default function Home() {
               <div className="border-b border-slate-100 px-5 py-2.5 flex items-center justify-between bg-white text-xs select-none">
                 {/* Logo info */}
                 <div className="flex items-center">
-                  <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[80px] w-[150px]" />
+                  <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[34px] w-[51px]" />
                 </div>
                 
                 {/* Right utility items */}
@@ -907,7 +907,7 @@ export default function Home() {
             {/* Brand Col */}
             <div className="md:col-span-4 space-y-4">
               <div className="flex items-center">
-                <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[112px] w-[210px]" />
+                <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[48px] w-[72px]" />
               </div>
               
               <p className="text-[13px] text-slate-500 font-sans font-medium leading-relaxed max-w-[220px]">
