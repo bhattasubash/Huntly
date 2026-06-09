@@ -235,8 +235,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-md border border-black rounded-full px-6 py-2.5 flex justify-between items-center shadow-[0_12px_30px_rgba(0,0,0,0.03)]">
           
           {/* Logo */}
-          <div className="flex items-center">
-            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-[98px] w-[147px]" />
+          <div className="h-8 w-[147px] relative flex items-center">
+            <img src="/huntly_logo.png" alt="Huntly Logo" className="absolute left-0 top-1/2 -translate-y-1/2 h-[98px] w-[147px] max-w-none" />
           </div>
 
           {/* Links */}
