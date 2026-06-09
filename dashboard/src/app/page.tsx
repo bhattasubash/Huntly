@@ -131,8 +131,8 @@ export default function Home() {
   const [website, setWebsite] = useState('');
   const [companyName, setCompanyName] = useState('');
   
-  // Status states: 'idle' | 'loading' | 'success' | 'error' | 'duplicate'
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'duplicate'>('idle');
+  const [errorDetails, setErrorDetails] = useState<string>('');
   const [waitlistCount, setWaitlistCount] = useState<number | null>(null);
   
   // Attribution parameters
@@ -199,6 +199,7 @@ export default function Home() {
           setStatus('duplicate');
         } else {
           console.error('Supabase error:', error);
+          setErrorDetails(error.message || JSON.stringify(error));
           setStatus('error');
         }
       } else {
@@ -207,6 +208,7 @@ export default function Home() {
       }
     } catch (err) {
       console.error('Submission catch error:', err);
+      setErrorDetails(err instanceof Error ? err.message : String(err));
       setStatus('error');
     }
   };
@@ -824,9 +826,14 @@ export default function Home() {
                 </p>
               )}
               {status === 'error' && (
-                <p className="text-xs text-white bg-red-500 border border-red-600 p-3 rounded-2xl font-bold text-center mt-2 shadow-sm">
-                  Something went wrong. Please check details and try again.
-                </p>
+                <div className="text-xs text-white bg-red-500 border border-red-600 p-3 rounded-2xl font-bold text-center mt-2 shadow-sm space-y-1">
+                  <p>Something went wrong. Please check details and try again.</p>
+                  {errorDetails && (
+                    <p className="text-[10px] font-mono opacity-90 bg-red-600/50 p-1.5 rounded-lg border border-red-700/50 mt-1 select-all break-all text-left">
+                      Details: {errorDetails}
+                    </p>
+                  )}
+                </div>
               )}
 
               {/* Submit button */}
