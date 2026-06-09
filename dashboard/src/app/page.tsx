@@ -236,8 +236,8 @@ export default function Home() {
           
           {/* Logo */}
           <div className="flex items-center gap-2.5">
-            <div className="h-8 w-8 rounded-full bg-slate-900 flex items-center justify-center font-display font-black text-base text-[#b9ff66] shadow-sm">
-              S
+            <div className="h-8 w-8 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden shadow-sm">
+              <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
             </div>
             <span className="font-display font-black text-xl tracking-tight text-slate-900">
               Huntly
@@ -336,8 +336,8 @@ export default function Home() {
               <div className="border-b border-slate-100 px-5 py-2.5 flex items-center justify-between bg-white text-xs select-none">
                 {/* Logo info */}
                 <div className="flex items-center gap-2">
-                  <div className="h-5.5 w-5.5 rounded-full bg-slate-900 text-[#b9ff66] flex items-center justify-center font-display font-black text-[10px] shadow-sm">
-                    S
+                  <div className="h-5.5 w-5.5 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden shadow-sm">
+                    <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
                   </div>
                   <span className="font-display font-black text-xs tracking-tight text-slate-900">
                     Huntly
@@ -917,8 +917,8 @@ export default function Home() {
             {/* Brand Col */}
             <div className="md:col-span-4 space-y-4">
               <div className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-full bg-slate-900 text-[#b9ff66] flex items-center justify-center font-display font-black text-base shadow-sm">
-                  S
+                <div className="h-8 w-8 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden shadow-sm">
+                  <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
                 </div>
                 <span className="font-display font-black text-xl tracking-tight text-slate-900">Huntly</span>
               </div>

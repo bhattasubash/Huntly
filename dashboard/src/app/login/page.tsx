@@ -183,8 +183,8 @@ export default function LoginPage() {
       {/* Header link back */}
       <div className="absolute top-8 left-8 flex items-center gap-2">
         <Link href="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-tr from-primary to-accent flex items-center justify-center font-bold text-md text-white">
-            S
+          <div className="h-8 w-8 rounded-lg overflow-hidden flex items-center justify-center bg-gradient-to-tr from-primary to-accent">
+            <img src="/huntly_logo.png" alt="Huntly Logo" className="h-full w-full object-contain" />
           </div>
           <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Huntly
