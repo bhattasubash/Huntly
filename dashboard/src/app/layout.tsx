@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter, Open_Sans } from 'next/font/google';
-import Script from 'next/script';
 import './globals.css';
 
 const inter = Inter({
@@ -29,18 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${openSans.variable} h-full antialiased`}>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-R7K2SQ55XG"
-          strategy="afterInteractive"
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7K2SQ55XG"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-R7K2SQ55XG');
+            `,
+          }}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-R7K2SQ55XG');
-          `}
-        </Script>
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         {children}
